@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socially.ai</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Devanagari:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Devanagari:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  </head>
+
+  <body>
+    <header>
+      <div class="nav-bar">
+        <div class="logo">
+          <img src="Socially.ai.png" alt="socially.ai logo" />
+        </div>
+        <div class="left-options">
+          <ul>
+            <li>
+              <a id="features" href="#"> Features </a>
+            </li>
+            <li>
+              <a id="pricing" href="#"> Pricing </a>
+            </li>
+            <li id="signin">
+              <a href="/login"><button class="sign-in">Sign-In</button></a>
+            </li>
+            <li id="signup">
+              <a href="/register"><button class="sign-up">Sign-Up</button></a>
+            </li>
+          </ul>
+
+          <div class="hamburger">
+            <button onclick="hburger()" id="burg" class="burger"><i class="fas fa-bars"></i>
+            </button>
+            <button onclick="closehburger()" id="clsburger" class="burger closeburger"><i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+        <div id="res" class="response">
+          <ul class="response-navbar">
+            <li>
+              <a id="hfeatures" href="#"> Features </a>
+            </li>
+            <li>
+              <a id="hpricing" href="#"> Pricing </a>
+            </li>
+            <li id="hsignin">
+              <a id="hsgnin" href="/login" role="button"> Sign-In </a>
+            </li>
+            <li id="hsignup">
+              <!-- <a id="hsignup" href="/register" role="button"> Sign-Up </a> -->
+               <p><a href="/register">Sign-Up</a></p>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="hero-section">
+      <div class="text-btns">
+        <h1 class="headline">Transform Your Social Media Analytics</h1>
+        <h2 class="introtext">
+          Get powerful insights into your social media performance with
+          AI-powered analytics. Understand what content works best for your
+          audience.
+        </h2>
+        <a href="/register"><button class="ctabutton">Get Started</button></a>
+        <div class="other-cta">
+          <div id="demo">
+            <button>Watch Demo</button>
+          </div>
+          <div id="callus">
+            <button>Call Us</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-image">
+        <img src="Untitledhh-1@2x.png" alt="artwork" />
+      </div>
+    </div>
+    <script>
+      let a=document.getElementById('res')
+let b=document.getElementById('clsburger')
+let c=document.getElementById('burg')
+function hburger(){
+  console.log(a)
+  a.style.right = '0px';
+  b.style.display = 'block';
+  c.style.display='none';
+}
+
+function closehburger(){
+  a.style.right='-600px';
+  b.style.display = 'none';
+  c.style.display='block';
+}
+    </script>
+  </body>
+</html>
